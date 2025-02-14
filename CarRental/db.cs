@@ -13,7 +13,7 @@ namespace CarRental
 {
     internal class db
     {
-        public static string connect = @"server=localhost;port=3306;username=root;password=root;database=carRental";
+        public static string connect = @"server=localhost;port=3306;username=root;password=;database=carRental";
         MySqlConnection connection = new MySqlConnection(connect); 
 
         public DataTable MySqlReturnData(string query,DataGridView grid)

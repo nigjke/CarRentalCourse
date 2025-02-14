@@ -37,7 +37,7 @@ namespace CarRental
             using (MySqlConnection connection = new MySqlConnection(db.connect))
             {
                 connection.Open();
-                MySqlCommand command = new MySqlCommand("UPDATE cars SET make = @make, model = @model, year = @year, license_plate = @license_plate, status = @status, price = @price WHERE license_plate = @license_plate", connection);
+                MySqlCommand command = new MySqlCommand("UPDATE cars SET make = @make, model = @model, year = @year, license_plate = @license_plate, price = @price WHERE license_plate = @license_plate", connection);
                 command.Parameters.AddWithValue("@make", make);
                 command.Parameters.AddWithValue("@model", model);
                 command.Parameters.AddWithValue("@year", year);

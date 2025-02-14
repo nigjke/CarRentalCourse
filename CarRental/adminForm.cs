@@ -14,7 +14,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using static Mysqlx.Notice.Frame.Types;
 using Word = Microsoft.Office.Interop.Word;
 
 namespace CarRental
